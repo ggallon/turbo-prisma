@@ -6,11 +6,20 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**", ".next/**"]
     },
+    "web#build": {
+      "dependsOn": ["^db:generate", "^build"],
+      "outputs": [".next/**"]
+    },
+    "db:generate": {},
+    "db:push": {},
+    "dev": {
+      "dependsOn": ["^db:generate"],
+      "cache": false
+    },
     "lint": {
+      "cache": false,
       "outputs": []
     },
-    "dev": {
-      "cache": false
-    }
+    "type-check": {}
   }
 }
