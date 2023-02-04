@@ -5,7 +5,6 @@ module.exports = {
     // packages content
     "../../packages/ui/src/*.{ts,tsx}",
   ],
-  darkMode: "class",
   theme: {
     extend: {
       keyframes: {
