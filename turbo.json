@@ -16,10 +16,7 @@
       "dependsOn": ["^db:generate"],
       "cache": false
     },
-    "lint": {
-      "cache": false,
-      "outputs": []
-    },
+    "lint": {},
     "type-check": {}
   }
 }
