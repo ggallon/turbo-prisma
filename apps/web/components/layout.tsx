@@ -4,7 +4,7 @@ interface LayoutProps {
 
 export function Layout({ children }: LayoutProps) {
   return (
-    <main className="relative mx-auto max-w-5xl" role="main">
+    <main className="relative mx-auto max-w-6xl" role="main">
       {children}
     </main>
   );
