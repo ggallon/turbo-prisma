@@ -3,7 +3,6 @@
  */
 const nextConfig = {
   reactStrictMode: true,
-  transpilePackages: ["ui"],
   compiler: {
     removeConsole: {
       exclude: ["error"],
