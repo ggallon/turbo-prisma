@@ -28,6 +28,8 @@ export default async function handler(
       select: userEmail,
     });
 
+    console.log("users", users);
+
     if (!users) throw new ApiError(500, "Failed to retrieve users");
 
     return res.status(200).json({ users });
