@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     // app content
@@ -7,6 +8,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        mono: {
+          light: "#f5f5f7",
+          dark: "#1d1d1f",
+          link: "#2997ff",
+        },
+      },
       keyframes: {
         blink: {
           "0%": { opacity: 0.2 },
