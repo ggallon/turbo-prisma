@@ -27,7 +27,6 @@
     },
     "lint": {},
     "share-static-hardlink": {
-      "persistent": true,
       "cache": false
     },
     "type-check": {}
