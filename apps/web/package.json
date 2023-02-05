@@ -6,6 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "share-static-symlink": "rm -rf ./public/shared-assets && ln -s ../../../assets/shared ./public/shared-assets",
+    "share-static-hardlink": "rm ./public/shared-assets && cp -r ../../assets/shared ./public/shared-assets",
     "lint": "TIMING=1 next lint",
     "type-check": "tsc --noEmit"
   },

@@ -19,6 +19,9 @@
       "env": ["DATABASE_URL"],
       "outputs": [".next/**"]
     },
+    "web#vercel-build": {
+      "dependsOn": ["share-static-hardlink", "web#build"]
+    },
     "db:generate": {},
     "db:push": {},
     "dev": {
