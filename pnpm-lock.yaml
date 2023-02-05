@@ -12,6 +12,45 @@ importers:
       prettier: 2.8.3
       turbo: 1.7.2
 
+  apps/beta:
+    specifiers:
+      '@next/font': 13.1.6
+      '@types/node': ^18.11.19
+      '@types/react': 18.0.27
+      '@types/react-dom': ^18.0.7
+      autoprefixer: ^10.4.13
+      database: workspace:*
+      eslint: ^8.33.0
+      eslint-config-custom: workspace:*
+      next: 13.1.7-canary.4
+      postcss: ^8.4.21
+      react: 18.2.0
+      react-dom: 18.2.0
+      tailwind-config: workspace:*
+      tailwindcss: ^3.2.4
+      tsconfig: workspace:*
+      typescript: ^4.9.5
+      ui: workspace:*
+    dependencies:
+      '@next/font': 13.1.6
+      database: link:../../packages/database
+      next: 13.1.7-canary.4_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      ui: link:../../packages/ui
+    devDependencies:
+      '@types/node': 18.11.19
+      '@types/react': 18.0.27
+      '@types/react-dom': 18.0.10
+      autoprefixer: 10.4.13_postcss@8.4.21
+      eslint: 8.33.0
+      eslint-config-custom: link:../../packages/eslint-config-custom
+      postcss: 8.4.21
+      tailwind-config: link:../../packages/tailwind-config
+      tailwindcss: 3.2.4_postcss@8.4.21
+      tsconfig: link:../../packages/tsconfig
+      typescript: 4.9.5
+
   apps/docs:
     specifiers:
       '@types/node': ^18.11.18
@@ -215,6 +254,10 @@ packages:
     resolution: {integrity: sha512-4NNHIWC6iie2dpKv0dZaR77leandvlXrar2o0ScdGNKztHmnocVGiThTm6Dbjy/IA45B1p3PTxBNbASrIl4AyA==}
     dependencies:
       glob: 7.1.7
+    dev: false
+
+  /@next/font/13.1.6:
+    resolution: {integrity: sha512-AITjmeb1RgX1HKMCiA39ztx2mxeAyxl4ljv2UoSBUGAbFFMg8MO7YAvjHCgFhD39hL7YTbFjol04e/BPBH5RzQ==}
     dev: false
 
   /@next/swc-android-arm-eabi/13.1.7-canary.4:
@@ -439,6 +482,10 @@ packages:
 
   /@types/node/18.11.18:
     resolution: {integrity: sha512-DHQpWGjyQKSHj3ebjFI/wRKcqQcdR+MoFBygntYOZytCqNfkd2ZC4ARDJ2DQqhjH5p85Nnd3jhUJIXrszFX/JA==}
+    dev: true
+
+  /@types/node/18.11.19:
+    resolution: {integrity: sha512-YUgMWAQBWLObABqrvx8qKO1enAvBUdjZOAWQ5grBAkp5LQv45jBvYKZ3oFS9iKRCQyFjqw6iuEa1vmFqtxYLZw==}
     dev: true
 
   /@types/prop-types/15.7.5:
