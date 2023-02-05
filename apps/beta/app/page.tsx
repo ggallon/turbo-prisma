@@ -19,7 +19,7 @@ const LOGOS = [
   { alt: "PlanetScale", file: "planetscale" },
 ];
 
-export default function Web() {
+export default function Beta() {
   return (
     <Layout>
       <div className="flex min-h-screen flex-col items-center justify-center gap-y-10">

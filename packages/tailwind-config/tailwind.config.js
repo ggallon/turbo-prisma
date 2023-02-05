@@ -16,7 +16,7 @@ module.exports = {
         link: {
           DEFAULT: "#06c",
           dark: "#2997ff",
-        }
+        },
       },
       keyframes: {
         blink: {

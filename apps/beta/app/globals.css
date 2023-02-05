@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  min-width: 320px;
+}
+
+#__next {
+  @apply flex min-h-screen flex-col;
+}

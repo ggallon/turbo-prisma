@@ -1,6 +1,6 @@
-# Turborepo starter
+# Monorepo starter
 
-This is an official pnpm starter turborepo.
+This is an pnpm starter turborepo.
 
 ## What's inside?
 
@@ -8,9 +8,11 @@ This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes th
 
 ### Apps and Packages
 
+- `beta`: a [Next 13 app directory](https://beta.nextjs.org/) app
 - `docs`: a [Next.js](https://nextjs.org/) app
 - `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
+- `database`: Prisma setup shared by applications
+- `ui`: a stub React component library shared by applications
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
@@ -60,14 +62,3 @@ Next, you can link your Turborepo to your Remote Cache by running the following 
 ```
 pnpm dlx turbo link
 ```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)

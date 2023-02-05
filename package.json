@@ -9,6 +9,7 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
+    "dev:beta": "turbo run dev --filter=beta",
     "dev:web": "turbo run dev --filter=web",
     "db:generate": "turbo run db:generate",
     "db:push": "turbo run db:push",
