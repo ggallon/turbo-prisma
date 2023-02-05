@@ -1,13 +1,18 @@
+import nextra from "nextra";
+
+const withNextra = nextra({
+  theme: "nextra-theme-docs",
+  themeConfig: "./theme.config.jsx",
+});
+
 /**
  * @type {import('next').NextConfig}
  */
-const nextConfig = {
+export default withNextra({
   reactStrictMode: true,
   compiler: {
     removeConsole: {
       exclude: ["error"],
     },
   },
-};
-
-export default nextConfig;
+});
