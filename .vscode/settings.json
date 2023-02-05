@@ -1,0 +1,12 @@
+{
+  "typescript.tsdk": "./node_modules/.pnpm/typescript@4.9.5/node_modules/typescript/lib",
+
+  // Formatting using Prettier by default for all languages
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
+  // Formatting using Prisma.
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  }
+}
