@@ -12,8 +12,11 @@ module.exports = {
         mono: {
           light: "#f5f5f7",
           dark: "#1d1d1f",
-          link: "#2997ff",
         },
+        link: {
+          DEFAULT: "#06c",
+          dark: "#2997ff",
+        }
       },
       keyframes: {
         blink: {

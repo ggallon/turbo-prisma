@@ -21,23 +21,23 @@ export const buttonVariants = cva(
     variants: {
       variant: {
         default: [
-          "bg-black hover:bg-slate-700",
+          "text-white bg-black hover:bg-slate-700",
           "dark:bg-mono-light dark:text-slate-900 dark:hover:bg-black dark:hover:text-mono-light",
         ],
         negative: [
-          "bg-red-500 hover:bg-red-600",
+          "text-white bg-red-500 hover:bg-red-600",
           "dark:hover:bg-red-600",
         ],
         outline: [
-          "bg-transparent border border-slate-200 hover:bg-slate-100",
+          "bg-transparent border border-slate-200 hover:bg-slate-200",
           "dark:border-slate-700 dark:text-slate-100 dark:hover:text-slate-700",
         ],
         subtle: [
-          "bg-slate-100 text-slate-900 hover:bg-slate-200",
+          "bg-slate-200 text-slate-900 hover:bg-slate-400",
           "dark:bg-slate-700 dark:text-slate-100 dark:hover:text-slate-700",
         ],
         ghost: [
-          "bg-transparent hover:bg-slate-100",
+          "bg-transparent hover:bg-slate-200",
           "dark:hover:bg-slate-800 dark:text-slate-100 dark:hover:text-slate-100",
           "data-[state=open]:bg-transparent dark:data-[state=open]:bg-transparent",
         ],
