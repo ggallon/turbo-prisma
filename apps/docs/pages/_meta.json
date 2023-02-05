@@ -1,0 +1,13 @@
+{
+  "index": "Introduction",
+  "frameworks": "JS Frameworks & Libs",
+  "about": "About",
+  "---": {
+    "type": "separator"
+  },
+  "github_link": {
+    "title": "Monorepo",
+    "href": "https://github.com/ggallon/turbo-prisma",
+    "newWindow": true
+  }
+}
