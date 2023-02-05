@@ -32,7 +32,7 @@ export default function Beta() {
               <div key={logo.alt}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={`/logos/${logo.file}-icon.svg`}
+                  src={`/shared-assets/logos/${logo.file}-icon.svg`}
                   alt={logo.alt}
                   className={logo.file === "tailwindcss" ? "w-7" : "h-6"}
                 />

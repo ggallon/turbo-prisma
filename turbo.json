@@ -3,12 +3,24 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["dist/**", ".next/**"]
+      "outputs": ["dist/**", ".next/**"],
+      "outputMode": "new-only"
+    },
+    "beta#build": {
+      "dependsOn": ["^db:generate", "^build"],
+      "env": ["DATABASE_URL"],
+      "outputs": [".next/**"]
+    },
+    "beta#vercel-build": {
+      "dependsOn": ["share-static-hardlink", "beta#build"]
     },
     "web#build": {
       "dependsOn": ["^db:generate", "^build"],
       "env": ["DATABASE_URL"],
       "outputs": [".next/**"]
+    },
+    "web#vercel-build": {
+      "dependsOn": ["share-static-hardlink", "web#build"]
     },
     "db:generate": {},
     "db:push": {},
@@ -17,6 +29,9 @@
       "cache": false
     },
     "lint": {},
+    "share-static-hardlink": {
+      "cache": false
+    },
     "type-check": {}
   }
 }
