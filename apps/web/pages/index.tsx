@@ -11,12 +11,12 @@ const VARIANTS = [
 ];
 
 const LOGOS = [
-  { alt: "Turborepo", file: "turborepo-icon-light-background.svg" },
-  { alt: "Pnpm", file: "pnpm-icon-light-background.svg" },
-  { alt: "Next.js", file: "nextjs-icon-light-background.svg" },
-  { alt: "Tailwind CSS", file: "tailwindcss-icon.svg" },
-  { alt: "Prisma", file: "prisma-icon-light-background.svg" },
-  { alt: "PlanetScale", file: "planetscale-icon-light-background.svg" },
+  { alt: "Turborepo", file: "turborepo" },
+  { alt: "Pnpm", file: "pnpm" },
+  { alt: "Next.js", file: "nextjs" },
+  { alt: "Tailwind CSS", file: "tailwindcss" },
+  { alt: "Prisma", file: "prisma" },
+  { alt: "PlanetScale", file: "planetscale" },
 ];
 
 export default function Web() {
@@ -32,9 +32,9 @@ export default function Web() {
               <div key={logo.alt}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={`/logos/${logo.file}`}
+                  src={`/logos/${logo.file}-icon.svg`}
                   alt={logo.alt}
-                  className={logo.alt === "Tailwind CSS" ? " w-7" : "h-6"}
+                  className={logo.file === "tailwindcss" ? "w-7" : "h-6"}
                 />
               </div>
             ))}
