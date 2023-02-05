@@ -40,7 +40,7 @@ export default function Web() {
             ))}
           </div>
         </div>
-        <a href="/api/users">
+        <a href="/api/users" className="text-mono-link hover:underline">
           <span className="font-bold">[API]</span> go to view Users
         </a>
         <div className="space-x-3">
